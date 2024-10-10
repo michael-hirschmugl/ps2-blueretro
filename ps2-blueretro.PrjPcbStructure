@@ -1,1 +1,6 @@
 Record=TopLevelDocument|FileName=00-ps2-blueretro.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=00-ps2-blueretro.SchDoc|Designator=U_01-ESP32-ps2-blueretro|SchDesignator=U_01-ESP32-ps2-blueretro|FileName=01-ESP32-ps2-blueretro.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=01-ESP32-ps2-blueretro.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=00-ps2-blueretro.SchDoc|Designator=U_02-USB-ps2-blueretro|SchDesignator=U_02-USB-ps2-blueretro|FileName=02-USB-ps2-blueretro.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=02-USB-ps2-blueretro.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=00-ps2-blueretro.SchDoc|Designator=U_03-PSU-ps2-blueretro|SchDesignator=U_03-PSU-ps2-blueretro|FileName=03-PSU-ps2-blueretro.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=03-PSU-ps2-blueretro.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=NoMainPathDocument|SourceDocument=00-ps2-blueretro.SchDoc|FileName=04-CTRL1-ps2-blueretro.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=00-ps2-blueretro.SchDoc|FileName=05-CTRL2-ps2-blueretro.SchDoc|SheetNumber=6

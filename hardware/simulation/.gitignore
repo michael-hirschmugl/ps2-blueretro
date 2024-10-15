@@ -1,0 +1,40 @@
+# LTspice-generated files
+
+# Log files
+*.log
+
+# Raw simulation output files
+*.raw
+
+# Waveform files
+*.wav
+
+# Backup files
+*.bak
+
+# Netlist files
+*.net
+
+# Simulation control files
+*.ctl
+
+# Temporary files
+*.tmp
+
+# Simulation schematic backups
+*.smt
+
+# Auto-save files
+*.autosave
+
+# LTspice config files
+*.ini
+
+# Other temporary and backup files
+*~
+*.old
+*.swp
+
+# OS-specific files (optional, but good practice)
+.DS_Store
+Thumbs.db

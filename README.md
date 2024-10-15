@@ -1,5 +1,7 @@
 # PS2 BlueRetro Mod
 
+![PS2 BlueMoogle Bluetooth Mod Logo](images/PS2-BlueMoogle-Logo.png)
+
 This project adds Bluetooth connectivity for PlayStation 2 controllers, based on the BlueRetro project. The goal is to integrate this functionality directly into the PlayStation 2 as a hardware mod.
 
 ## Project Status

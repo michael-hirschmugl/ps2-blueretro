@@ -13,7 +13,7 @@ The project is currently in the **Prototype v1** phase, with the initial PCB des
 - Power supply circuits
 - Global status LED
 - Controller Port 1 detect LED
-- Current mirror for controller detection
+- Current mirror for controller detection (working; not tested with real controller)
 - Detection of the PlayStation 2 console's power supply
 
 ### Future Development
@@ -27,7 +27,7 @@ The next steps, after testing Prototype v1, include:
 
 ### Hardware Version
 
-This project modifies the **BlueRetro HW2** design, adapted for integration as a PlayStation 2 mod with external controller detection capabilities.
+This project modifies the [BlueRetro HW2](https://github.com/darthcloud/BlueRetro/wiki#2---building-hardware-hw2) design, adapted for integration as a PlayStation 2 mod with external controller detection capabilities.
 
 ## Firmware
 

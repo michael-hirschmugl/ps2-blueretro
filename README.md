@@ -1,4 +1,4 @@
-# PS2 BlueRetro Mod
+# PS2 BlueRetro Mod - BlueMoogle
 
 ![PS2 BlueMoogle Bluetooth Mod Logo](images/PS2-BlueMoogle-Logo.png)
 

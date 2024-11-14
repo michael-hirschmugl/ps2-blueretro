@@ -8,4 +8,4 @@ git checkout firmware-dev --force
 
 # Initialize and update submodules
 git submodule init
-git submodule update # --init --recursive
+git submodule update --init --recursive

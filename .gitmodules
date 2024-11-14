@@ -1,6 +1,6 @@
-[submodule "firmware/BlueRetroRoot"]
-	path = firmware/BlueRetroRoot
-	url = git@github.com:michael-hirschmugl/BlueRetroRoot.git
 [submodule "hardware/altium-library"]
 	path = hardware/altium-library
 	url = git@github.com:michael-hirschmugl/altium-library.git
+[submodule "firmware/BlueRetroFirmware"]
+	path = firmware/BlueRetroFirmware
+	url = git@github.com:michael-hirschmugl/BlueRetroFirmware.git

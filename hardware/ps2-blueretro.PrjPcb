@@ -117,23 +117,6 @@ GenerateClassCluster=0
 DocumentUniqueId=CFUGJXCR
 
 [Document5]
-DocumentPath=02-USB-ps2-blueretro.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KGWUXGNV
-
-[Document6]
 DocumentPath=00-ps2-blueretro.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -150,8 +133,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WDZJGERB
 
-[Document7]
-DocumentPath=03-PSU-ps2-blueretro.SchDoc
+[Document6]
+DocumentPath=02-PSU-ps2-blueretro.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -167,8 +150,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CJQNGNVV
 
-[Document8]
-DocumentPath=04-CTRL1-ps2-blueretro.SchDoc
+[Document7]
+DocumentPath=03-CTRL1-ps2-blueretro.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -184,8 +167,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PAJTCPXZ
 
-[Document9]
-DocumentPath=05-CTRL2-ps2-blueretro.SchDoc
+[Document8]
+DocumentPath=04-CTRL2-ps2-blueretro.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -201,8 +184,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WFYKHIYX
 
-[Document10]
-DocumentPath=06-DETECT-ps2-blueretro.SchDoc
+[Document9]
+DocumentPath=05-DETECT-ps2-blueretro.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

@@ -3,14 +3,18 @@
 ## [Unreleased]
 
 ### Added
-- Initial prototype PCB (v1) for testing:
+- Prototype PCB (v1) tested and validated:
   - USB-C connection to ESP32
-  - Bluetooth connection to controllers
-  - Power supplies, status LEDs, controller detection
+  - Bluetooth connection to controllers (successfully paired with PS3 controller)
+  - Power supplies, status LEDs, and controller detection
+
+- Prototype v2:
+  - Integration with PlayStation 2 Controller Ports
+  - Buzzer added for user feedback
+  - Final hardware functionalities implemented
 
 ### Planned
-- Finalize pin assignments
-- Test prototype with PlayStation 2 console
-- Design next prototype (v2) with Controller Port 2 support
-- Shrink hardware for PlayStation 2 Slim compatibility
-- Adapt BlueRetro firmware for custom hardware design
+- Complete PCB design for Prototype v2
+- Test Prototype v2 functionality with external wiring
+- Adapt BlueRetro firmware for v2 hardware setup, including buzzer functionality
+- Prepare Prototype v3 for direct integration into PlayStation 2 Slim

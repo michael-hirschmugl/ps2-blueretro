@@ -6,26 +6,18 @@ This project adds Bluetooth connectivity for PlayStation 2 controllers, based on
 
 ## Project Status
 
-The project is currently in the **Prototype v1** phase, with the initial PCB design sent for manufacturing. This version serves to validate core functionalities, including:
+The project is currently in the **Prototype v2** phase. Prototype v1 has been successfully tested, enabling the definition of all remaining pin configurations. The schematic for v2 is complete, and the PCB design is in progress.
 
-- USB-C connection to the ESP32 (tested and working)
-- Bluetooth pairing with controllers (tested successfully with a PS3 controller)
-- Power supply circuits
-- Global status LED
-- Controller Port 1 detect LED
-- Current mirror for controller detection (working; not tested with real controller)
-- Detection of the PlayStation 2 console's power supply
+### Prototype v2 Features
 
-### Future Development
+- Integration with PlayStation 2 Controller Ports.
+- Final hardware functionalities implemented.
+- Addition of a buzzer for user feedback.
+- External wiring for connection to the PlayStation 2 (v2 is not yet designed for direct integration into the console).
 
-The next steps, after testing Prototype v1, include:
+Firmware adjustments will be necessary to support the new hardware setup.
 
-- Connecting the board to Controller Port 1 on the PlayStation 2 and adding support for an optional external controller.
-- Expanding the setup to Controller Port 2.
-- Minimizing the hardware for integration within a PlayStation 2 Slim.
-- Adjusting the firmware as needed based on test results.
-
-### Hardware Version
+## Hardware Version
 
 This project modifies the [BlueRetro HW2](https://github.com/darthcloud/BlueRetro/wiki#2---building-hardware-hw2) design, adapted for integration as a PlayStation 2 mod with external controller detection capabilities.
 
@@ -62,11 +54,10 @@ For Brave browser users: Bluetooth web configuration may need to be enabled in t
 
 ## Next Steps
 
-1. Test and validate Prototype v1 functionality.
-2. Adapt the hardware for PlayStation 2 Controller Port 2.
-3. Shrink the hardware for PlayStation 2 Slim compatibility.
-4. Continue with firmware development and testing.
-5. Prepare for Prototype v2.
+1. Finalize the PCB design for Prototype v2.
+2. Test and validate Prototype v2 functionality.
+3. Adapt firmware to support new hardware features, including the buzzer.
+4. Prepare for Prototype v3, focusing on direct console integration for PlayStation 2 Slim.
 
 ## Acknowledgments
 

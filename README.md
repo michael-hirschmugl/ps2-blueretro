@@ -6,7 +6,7 @@ This project adds Bluetooth connectivity for PlayStation 2 controllers, based on
 
 ## Project Status
 
-The project is currently in the **Prototype v2** phase. Prototype v1 has been successfully tested, enabling the definition of all remaining pin configurations. The schematic for v2 is complete, and the PCB design is in progress.
+The project is currently in the **Prototype v2** phase. Prototype v1 has been successfully tested, enabling the definition of all remaining pin configurations. The schematic for v2 is complete, and the PCB design is in progress. Testing of Prototype v2 has commenced.
 
 ### Prototype v2 Features
 
@@ -14,8 +14,22 @@ The project is currently in the **Prototype v2** phase. Prototype v1 has been su
 - Final hardware functionalities implemented.
 - Addition of a buzzer for user feedback.
 - External wiring for connection to the PlayStation 2 (v2 is not yet designed for direct integration into the console).
+- Detection of console power supply.
+- Reading and control of the boot (system reset) signal, including a buffer for optional signal reading by the firmware.
+- LED control and buzzer functionality tested and operational.
 
 Firmware adjustments will be necessary to support the new hardware setup.
+
+## Known Issues and Ongoing Work
+
+- **Controller Port Connection Detection**: Currently, detecting whether a wired controller is connected is not functioning as expected. The voltage at the pins is read correctly, but no change is detected when a controller is plugged in. However, grounding the pin directly triggers a change. This suggests insufficient current draw from the controller. Adjusting the resistor in the current mirror is planned to resolve this issue. Simulation shows promising results.
+- **Buffer Enable Pin**: The enable pin of the buffer must be pulled high to allow easy flashing of the board after the BlueRetro firmware is installed. Currently, the buffer prevents flashing due to the boot pin being repurposed as the reset pin in BlueRetro firmware.
+
+## Next Steps
+
+1. Correctly dimension the controller port detection circuitry.
+2. Verify that controller signals are correctly forwarded to the console.
+3. Produce the first production sample using a flex PCB for direct console integration.
 
 ## Hardware Version
 
@@ -23,7 +37,7 @@ This project modifies the [BlueRetro HW2](https://github.com/darthcloud/BlueRetr
 
 ## Firmware
 
-Currently, the firmware is based on [BlueRetro](https://github.com/darthcloud/BlueRetro). No firmware is included in this repository at this time, but custom modifications may be made to accommodate the unique hardware setup.
+Currently, the firmware is based on [BlueRetro](https://github.com/darthcloud/BlueRetro). A testing firmware is available in the `pcb-testing` branch within the `firmware` folder of this repository. Custom modifications are being made to accommodate the unique hardware setup.
 
 ### Flashing Instructions
 
@@ -51,13 +65,6 @@ The Bluetooth MAC address of the BlueRetro board can be located in the advanced 
 To access BlueRetro’s web configuration, a BLE-enabled Bluetooth adapter is required. You can access it here: [BlueRetro WebConfig](https://blueretro.io/).
 
 For Brave browser users: Bluetooth web configuration may need to be enabled in the settings under `brave://flags`.
-
-## Next Steps
-
-1. Finalize the PCB design for Prototype v2.
-2. Test and validate Prototype v2 functionality.
-3. Adapt firmware to support new hardware features, including the buzzer.
-4. Prepare for Prototype v3, focusing on direct console integration for PlayStation 2 Slim.
 
 ## Acknowledgments
 

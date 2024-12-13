@@ -11,6 +11,7 @@
 #define LED2_PIN   12
 #define LED3_PIN   15
 #define IO16_PIN   16
+#define IO14_PIN   14
 #define IO0_PIN    0
 
 // Zuordnung der ADC-Kanäle zu den Pins:
@@ -53,6 +54,15 @@ void app_main(void)
 
     gpio_set_level(IO16_PIN, 1);
 
+    gpio_config_t io_conf_io14 = {
+        .pin_bit_mask = (1ULL << IO14_PIN),
+        .mode = GPIO_MODE_OUTPUT,
+        .pull_down_en = 1,
+        .pull_up_en = 0,
+        .intr_type = GPIO_INTR_DISABLE
+    };
+    gpio_config(&io_conf_io14);
+
     gpio_config_t io_conf_io0 = {
         .pin_bit_mask = (1ULL << IO0_PIN),
         .mode = GPIO_MODE_INPUT,
@@ -73,14 +83,15 @@ void app_main(void)
         gpio_set_level(LED1_PIN, 1);
         gpio_set_level(LED2_PIN, 0);
         gpio_set_level(LED3_PIN, 1);
+        gpio_set_level(IO14_PIN, 1);
 
         // Kurzes Zirpen des Buzzers
-        for (int i = 0; i < 50; i++) {
+        //for (int i = 0; i < 50; i++) {
             //gpio_set_level(BUZZER_PIN, 1);
-            esp_rom_delay_us(2);   // sehr kurze HIGH-Phase
+        //    esp_rom_delay_us(2);   // sehr kurze HIGH-Phase
             //gpio_set_level(BUZZER_PIN, 0);
-            esp_rom_delay_us(248); // Rest der Periode für etwa 4 kHz
-        }
+            //esp_rom_delay_us(248); // Rest der Periode für etwa 4 kHz
+        //}
 
         // ADC-Werte lesen
         int val35 = adc1_get_raw(ADC1_CHANNEL_7);
@@ -98,14 +109,15 @@ void app_main(void)
         gpio_set_level(LED1_PIN, 0);
         gpio_set_level(LED2_PIN, 1);
         gpio_set_level(LED3_PIN, 0);
+        gpio_set_level(IO14_PIN, 0);
 
         // Wieder ein kurzes Zirpen
-        for (int i = 0; i < 50; i++) {
+        //for (int i = 0; i < 50; i++) {
             //gpio_set_level(BUZZER_PIN, 1);
-            esp_rom_delay_us(2);
+        //    esp_rom_delay_us(2);
             //gpio_set_level(BUZZER_PIN, 0);
-            esp_rom_delay_us(248);
-        }
+        //    esp_rom_delay_us(248);
+        //}
 
         // Erneut ADC-Werte lesen
         val35 = adc1_get_raw(ADC1_CHANNEL_7);
